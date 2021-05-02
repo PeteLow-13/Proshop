@@ -23,6 +23,7 @@
   "homepage": "https://github.com/PeteLow-13/Proshop#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
