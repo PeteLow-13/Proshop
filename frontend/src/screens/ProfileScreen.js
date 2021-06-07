@@ -19,7 +19,6 @@ const ProfileScreen = ({ location, history }) => {
 
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
-  // console.log(userDetails);
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
@@ -127,7 +126,7 @@ const ProfileScreen = ({ location, history }) => {
               </tr>
             </thead>
             <tbody>
-              {/* {orders.map((order) => (
+              {orders.map((order) => (
                 <tr key={order._id}>
                   <td>{order._id}</td>
                   <td>{order.createdAt.substring(0, 10)}</td>
@@ -152,7 +151,7 @@ const ProfileScreen = ({ location, history }) => {
                     </LinkContainer>
                   </td>
                 </tr>
-              ))} */}
+              ))}
             </tbody>
           </Table>
         )}
