@@ -56,10 +56,6 @@ const OrderScreen = ({ match }) => {
         setSdkReady(true);
       }
     }
-
-    // if (!order || order._id !== orderId) {
-    //   dispatch(getOrderDetails(orderId));
-    // }
   }, [dispatch, orderId, successPay, order]);
 
   const successPaymentHandler = (paymentResult) => {
@@ -184,7 +180,7 @@ const OrderScreen = ({ match }) => {
                     <Loader />
                   ) : (
                     <PayPalButton
-                      ammount={order.totalPrice}
+                      amount={order.totalPrice}
                       onSuccess={successPaymentHandler}
                     />
                   )}
