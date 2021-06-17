@@ -24,7 +24,7 @@ const UserListScreen = ({ history }) => {
     } else {
       history.push('/login');
     }
-    dispatch(listUsers());
+    // dispatch(listUsers());
   }, [dispatch, history, successDelete, userInfo]);
 
   const deleteHandler = (id) => {
@@ -46,12 +46,14 @@ const UserListScreen = ({ history }) => {
               <th>Name</th>
               <th>Email</th>
               <th>Admin</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             {users.map((user) => (
               <tr key={user._id}>
                 <td>{user._id}</td>
+                <td>{user.name}</td>
                 <td>
                   <a href={`mailto:${user.email}`}>{user.email}</a>
                 </td>
