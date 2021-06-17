@@ -12,14 +12,22 @@ const UserEditScreen = ({ match, history }) => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [isAdmin, setisAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const dispatch = useDispatch();
 
   const userDetails = useSelector((state) => state.userDetails);
-  const { loading, error, userInfo } = userDetails;
+  const { loading, error, user } = userDetails;
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (!user.name || user._id !== userId) {
+      dispatch(getUserDetails(userId));
+    } else {
+      setName(user.name);
+      setEmail(user.email);
+      setIsAdmin(user.isAdmin);
+    }
+  }, [dispatch, userId, user]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -63,7 +71,7 @@ const UserEditScreen = ({ match, history }) => {
                 type='checkbox'
                 label='Is Admin'
                 checked={isAdmin}
-                // onChange={(e) => setIsAdmin(e.target.checked)}
+                onChange={(e) => setIsAdmin(e.target.checked)}
               ></Form.Check>
             </Form.Group>
 
