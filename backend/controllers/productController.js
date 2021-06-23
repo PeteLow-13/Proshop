@@ -60,8 +60,8 @@ const createProduct = asyncHandler(async (req, res) => {
 });
 
 // @desc   Update a product
-// @route  Put /api/products/:id
-// @access  Private/admin
+// @route  PUT /api/products/:id
+// @access  Private/Admin
 const updateProduct = asyncHandler(async (req, res) => {
   const { name, price, description, image, brand, category, countInStock } =
     req.body;
