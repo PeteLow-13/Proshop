@@ -47,6 +47,7 @@ const UserListScreen = ({ history }) => {
               <th>Email</th>
               <th>Admin</th>
               <th>Actions</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
