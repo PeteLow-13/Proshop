@@ -4,7 +4,7 @@
 
 ## Description
 
-A full stack project using the MERN stack to sell products
+A full stack project using the MERN stack to sell products.
 
 ## Table of Contents
 
@@ -16,11 +16,13 @@ A full stack project using the MERN stack to sell products
 - [Questions](#questions)
 - [Contributers](#contributers)
 
-A full stack project using the MERN stack to sell products
-
 ## Usage
 
-Usage
+Pro shop is a full stack MERN site for eCommerce. A seller or Admin user can create and display products. Orders can be taken and payments processed by PayPal. Orders can be updated and maked as paid and shipped.
+
+Users can create profiles to save their info.
+
+This project is based off a Udemy course from Brad Traversy.
 
 ## App-Structure
 
@@ -28,9 +30,13 @@ App-Structure
 
 ## Media
 
-![Text](url)
-
-License
+![homescreen](./readmeassets/ps1.png)
+![productscreen](./readmeassets/ps2.png)
+![cartscreen](./readmeassets/ps3.png)
+![shippingscreen](./readmeassets/ps4.png)
+![paymentScreen](./readmeassets/ps5.png)
+![checkoutScreen](./readmeassets/ps6.png)
+![listProductsScreen](./readmeassets/ps7.png)
 
 ## Languages
 
@@ -44,7 +50,7 @@ Deployed on Heroku
 
 ## Repository
 
-- https://github.com/PeteLow-13/Charcuterie
+- https://github.com/PeteLow-13/Proshop
 
 ## Questions
 
