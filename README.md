@@ -1,6 +1,7 @@
 # MERN-Proshop
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![homescreen](./readmeassets/ps1.png)
 
 ## Description
 
