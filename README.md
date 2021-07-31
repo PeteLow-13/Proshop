@@ -40,7 +40,7 @@ App-Structure
 
 ## Languages
 
-JavaScript, ReactJS, MongoDB, CSS, HTML, Express, Node.JS
+JavaScript, ReactJS, MongoDB, CSS, HTML, Express, Node.JS, bycryptjs, jsonwebtokens, Axios, Multer, Mongoose, Morgan
 
 ## Deployed
 
